@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+	<header class="post-header">
+		<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y/%m/%d" }}</time></p>
+		<h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
+		<div class="share-buttons">
+			<div>
+				<div class="fb-share-button" data-href="{{ page.url | absolute_url }}" data-layout="button_count"></div>
+			</div>
+			<div>
+				<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+			<div>
+				<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+			</div>
+		</div>
+	</header>
+
+	<div class="post-content" itemprop="articleBody">
+		{{ content }}
+	</div>
+
+	<footer class="post-footer">
+		<ul>
+			{% if page.author %}<li>Author: <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span></li>{% endif %}
+			<li>Publish Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y/%m/%d %H:%M:%S" }}</time></li>
+			{% if page.moddate %}<li>Modified Date: <time datetime="{{ page.moddate | date_to_xmlschema }}" itemprop="dateModified">{{ page.moddate | date: "%Y/%m/%d %H:%M:%S" }}</time></li>{% endif %}
+		</ul>
+	</footer>
+
+</article>

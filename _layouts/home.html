@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="home">
+
+	{{ content }}
+
+	<div class="posts">
+	{% for post in site.posts limit:3 %}
+	<div class="post">
+		<header>
+			<p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time></p>
+			<h2 class="post-title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+		</header>
+
+		<div class="post-content">
+			{{ post.content }}
+		</div>
+	</div>
+	{% endfor %}
+	</div>
+
+</div>
