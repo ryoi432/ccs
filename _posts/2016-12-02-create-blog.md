@@ -3,6 +3,7 @@ layout: post
 title: ブログつくりました
 author: ryoi
 date: 2016-12-02 15:37:06 +0900
+moddate: 2016-12-02 15:42:01 +0900
 ---
 Jekyll でブログつくりました。  
 [GitHub Pages](https://pages.github.com/) というのを利用して公開しています。  
@@ -10,7 +11,8 @@ Jekyll でブログつくりました。
 
 
 なんとなくテーマを1から作ったんですが、Sass 便利ですね。  
-変数が使えてネストができるというだけで使う価値があります。
+変数が使えてネストができるというだけで使う価値があります。  
+デザインにはみんな大好き [Bootstrap](http://getbootstrap.com/) を fork した [Umi](http://nkmr6194.github.io/Umi/) というテーマを使わせていただきました。
 
 
 [Jekyll::Compose](https://github.com/jekyll/jekyll-compose) というプラグインを使っているのですが、なぜか Front-matter に date を生成する機能がないので毎回自分で書かないといけません。さすがに面倒なので CotEditor 用のスクリプトを組んで、とりあえずエディタ側でなんとかするようにしました。
