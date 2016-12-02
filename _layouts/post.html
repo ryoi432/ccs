@@ -27,7 +27,7 @@ layout: default
 	<footer class="post-footer">
 		<ul>
 			{% if page.author %}<li>Author: <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span></li>{% endif %}
-			<li>Publish Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y/%m/%d %H:%M:%S" }}</time></li>
+			<li>Published Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y/%m/%d %H:%M:%S" }}</time></li>
 			{% if page.moddate %}<li>Modified Date: <time datetime="{{ page.moddate | date_to_xmlschema }}" itemprop="dateModified">{{ page.moddate | date: "%Y/%m/%d %H:%M:%S" }}</time></li>{% endif %}
 		</ul>
 	</footer>
