@@ -16,7 +16,9 @@ $gray: #ccc;
 
 .site-menu {
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
+	-webkit-justify-content: center;
 	border-top: 1px solid $gray;
 	border-bottom: 1px solid $gray;
 	// .menu-item {
@@ -36,6 +38,7 @@ $gray: #ccc;
 	}
 	.share-buttons {
 		display: flex;
+		display: -webkit-flex;
 		margin: 1em 0;
 		div:nth-child(n+2) {
 			margin-left: 1em;
