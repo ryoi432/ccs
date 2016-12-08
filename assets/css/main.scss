@@ -2,6 +2,10 @@
 ---
 $gray: #ccc;
 
+$info: #217dbb;
+$info-background: #e1f0fa;
+$info-border: #c3e9f4;
+
 .site-header {
 	text-align: center;
 	margin-top: 2em;
@@ -43,6 +47,44 @@ $gray: #ccc;
 		div:nth-child(n+2) {
 			margin-left: 1em;
 		}
+	}
+	.post-content {
+		line-height: 180%;
+		h1,h2,h3,h4,h5,h6 {
+			font-weight: bold;
+			margin-top: 1.5em;
+			border-bottom: 1px dotted $gray;
+			padding-bottom: 0.1em;
+			padding-left: 0.1em;
+		}
+		h1:before,
+		h2:before,
+		h3:before,
+		h4:before,
+		h5:before,
+		h6:before {
+			font-family: 'Glyphicons Halflings';
+			content: "\e250";
+			font-weight: normal;
+			margin-right: 0.15em;
+			font-size: 70%;
+		}
+		p,ul,ol {
+			span.MathJax {
+				padding: 2px 4px;
+				font-size: 90%;
+				color: $info;
+				background-color: $info-background;
+			}
+		}
+		// .MathJax_Display {
+		// 	padding: 1em 4px;
+		// 	font-size: 90%;
+		// 	color: $info;
+		// 	background-color: $info-background;
+		// 	border: 1px solid $gray;
+		// 	border-radius: 2px;
+		// }
 	}
 	footer {
 		text-align: right;
