@@ -1,10 +1,12 @@
 import numpy as np
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 sns.set(font_scale=2)
 # sns.set_style("white")
 sns.set_style("ticks")
+mpl.rcParams['savefig.dpi'] = mpl.rcParams['savefig.dpi'] * 0.6
 
 #------------------------------------------------
 # Graph1

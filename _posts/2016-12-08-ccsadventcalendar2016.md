@@ -48,7 +48,7 @@ moddate: 2016-12-09 00:03:44 +0900
 
 突然ですが、1 さんと 2 さんの 2 人がいて、それぞれ $$X$$ と $$Y$$ というモノを持っている世界を考えてみましょう。
 
-![]({{site.baseurl}}/assets/posts/2016/12/08/graph3.png){:height="50%" width="50%"}
+![]({{site.baseurl}}/assets/posts/2016/12/08/graph3.png){:.img-responsive}
 
 ごちゃごちゃしたこのグラフは、その世界を表現したものです。
 $$X_1$$ 軸と $$Y_1$$ 軸は 1 さんが $$X$$ と $$Y$$ をいくつ持っているかを表し、$$X_2$$ 軸と $$Y_2$$ 軸は 2 さんのそれを表します。
@@ -78,7 +78,7 @@ $$U$$ と書かれている線は **無差別曲線** (Indifference Curve) と�
 では、社会全体としてはどうなるのでしょうか？
 同じように 2 つのモノがある世界を考えてもいいのですが、さらに複雑になってしまうので今回は 1 つに減らした世界を考えてみましょう。
 
-![]({{site.baseurl}}/assets/posts/2016/12/08/graph2.png){:height="50%" width="50%"}
+![]({{site.baseurl}}/assets/posts/2016/12/08/graph2.png){:.img-responsive}
 
 グラフの縦軸が値段、横軸が数量です。
 そして、$$D$$ の線を **需要曲線** (Demand Curve)、$$S$$ の線を **供給曲線** (Supply Curve)、黄色い部分のことを **消費者余剰** (Consumer Surplus)と呼びます。
