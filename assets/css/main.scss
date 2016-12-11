@@ -85,6 +85,16 @@ $info-border: #c3e9f4;
 		// 	border: 1px solid $gray;
 		// 	border-radius: 2px;
 		// }
+		td.code {
+			pre {
+				border: none;
+			}
+		}
+		pre.lineno {
+			border: none;
+			border-right: 1px solid $gray;
+			color: silver;
+		}
 	}
 	footer {
 		text-align: right;
