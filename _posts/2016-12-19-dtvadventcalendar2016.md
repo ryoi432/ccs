@@ -1,16 +1,16 @@
 ---
 layout: post
-title: コンテナフォーマットの比較
+title: DTVに最適なコンテナフォーマット
 author: ryoi
 date: 2016-12-19 22:40:11 +0900
-moddate: 2016-12-20 17:09:32 +0900
+moddate: 2016-12-20 17:30:55 +0900
 ---
 この記事は [DTV Advent Calendar 2016](http://www.adventar.org/calendars/1429){:target="_blank"} 19日目の記事です。
 {:.well}
 
 日本の地上デジタル放送や BS/CS デジタル放送は、基本的に MPEG-2 TS と呼ばれるコンテナフォーマットで多重化されたデータを放送しています。
 MPEG-2 TS はストリーミングに最適化されており、ノンリニアに編集したり、保存して視聴するには適さないフォーマットです。
-なんか堅苦しいタイトルをつけてしまいましたが、MPEG-2 TS をどのようなフォーマットに変換すれば便利に扱えるかを考えようというお話です。
+この記事では、そんな MPEG-2 TS をどのようなフォーマットに変換すれば便利に扱えるかを考えようというお話をします。
 
 ### なぜ TS のままだとダメなのか
 
@@ -57,15 +57,12 @@ $ MP4Box.exe -fps 29.97002997002997 -add "[映像ファイル名].m2v"#video:par
 
 ### たどり着いた結果
 
-私がどのようにしているかを紹介します。
-
-（0. TsSplitter でいらないデータを落とす）
+0. TsSplitter でいらないデータを落とす
 1. BonTsDemux で TS を m2v と aac に demux
 2. m2v を元に [logoGuillo](http://loggialogic.blogspot.com/2011/11/cm-logoguillo.html){:target="_blank"} で CM 検出し、.chapters.txt を生成
 3. [MP4Box](https://gpac.wp.mines-telecom.fr/mp4box/){:target="_blank"} で m2v, aac, .chapters.txt を mux
 
-本当は、H.264 にエンコードしておきたいのですが、録画マシンのスペックが低いためこのような形になりました。
-いつか全部 H.264 にエンコードするんだ……
+録画マシンのスペックが低いためこのような形になりました。
 
 ### まとめ
 
