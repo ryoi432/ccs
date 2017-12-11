@@ -17,7 +17,7 @@ date: 2017-12-11 22:28:03 +0900
 
 ### 曲を用意しました
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/00_song.mp3" | relative_url }}' %}
+{% include audio.html url='/assets/posts/2017/12/11/00_song.mp3' %}
 
 説明用に曲を作りました。微妙とかいわないで。
 
@@ -39,7 +39,7 @@ date: 2017-12-11 22:28:03 +0900
 
 ### コードを作る
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/01_chord.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/01_chord.mp3' %}
 
 ここから人によってバラバラだと思いますが、自分は先にコードを作ります。
 コードを作っておくと調が決まるので、メロディとかを弾きやすくなるからです。
@@ -52,7 +52,7 @@ BPMもこのあたりで決めることが多いです。
 
 ### メロディを作る
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/02_melo.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/02_melo.mp3' %}
 
 コードが決まると鳴らせる音がほぼ決まるので、流れに任せてメロディを作ります。
 ここで最終版を作りこむというよりはさらっと作ってしまいます。
@@ -60,7 +60,7 @@ BPMもこのあたりで決めることが多いです。
 
 ### リズムの骨格を作る
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/03_rhythm.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/03_rhythm.mp3' %}
 
 まずはマルチ音源のドラムキットを読み込んで適当に叩きます。
 （今回はXpand!2を使いました。）
@@ -70,7 +70,7 @@ BPMもこのあたりで決めることが多いです。
 
 ### ベースを作る
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/04_bass.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/04_bass.mp3' %}
 
 ベースラインはどうやって作ったらいいのか教えて欲しい……
 
@@ -80,7 +80,7 @@ BPMもこのあたりで決めることが多いです。
 
 ### リズムを作る
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/05_rhythm2.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/05_rhythm2.mp3' %}
 
 ベースができたらリズムをちゃんとつくり込みます。
 
@@ -93,11 +93,11 @@ BPMもこのあたりで決めることが多いです。
 
 ### 裏のシーケンスを作る
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/06_seq.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/06_seq.mp3' %}
 
 聞こえづらいのでメロディなしバージョンも用意しました。
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/06_seq-offmelo.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/06_seq-offmelo.mp3' %}
 
 SAW系の音とベル系の音の2つを足しています。
 あまり表には出てこない音ですが、メインのメロディと同じくらい重要だと思います。
@@ -107,7 +107,7 @@ SAW系の音とベル系の音の2つを足しています。
 
 ### メロディを作り直す
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/07_melo2.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/07_melo2.mp3' %}
 
 案の定メロディが気に入らなくなったのでボツにしました。
 
@@ -115,7 +115,7 @@ SAW系の音とベル系の音の2つを足しています。
 
 ### コードを作り直す
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/08_chord2.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/08_chord2.mp3' %}
 
 メロディを変えたらコードと合わなくなった場所がでてしまったので直します。
 
@@ -124,11 +124,11 @@ SAW系の音とベル系の音の2つを足しています。
 
 ### いろいろ音を足す
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/09_add.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/09_add.mp3' %}
 
 ↓メロディなしバージョンです。
 
-{% include audio.html url='{{ "/assets/posts/2017/12/11/09_add-offmelo.mp3" | relative_url }}'' %}
+{% include audio.html url='/assets/posts/2017/12/11/09_add-offmelo.mp3' %}
 
 ストリングスっぽいシンセとか4小節目8小節目のマレット系の音とかスネアロールとかいろいろ足しました。
 このあたりも他の曲を参考にしたりします。
