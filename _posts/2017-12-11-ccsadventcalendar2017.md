@@ -3,6 +3,7 @@ layout: post
 title: いい感じの曲のつくりかた
 author: ryoi
 date: 2017-12-11 22:28:03 +0900
+moddate: 2017-12-11 23:01:20 +0900
 ---
 この記事は [CCS Advent Calendar 2017](http://www.adventar.org/calendars/2551){:target="blank"} 11日目の記事です。
 昨日は、[@LuCK_ver_2](https://twitter.com/luck_ver_2){:target="_blank"} さんの [第二回目LuCKの不思議空間](https://docs.google.com/document/d/10xcH3EGm_Bsz4WRr1Kf2Cj5sDUNHQ7yvOjUejEgNchE/){:target="_blank"} でした。
@@ -130,7 +131,7 @@ SAW系の音とベル系の音の2つを足しています。
 
 {% include audio.html url='/assets/posts/2017/12/11/09_add-offmelo.mp3' %}
 
-ストリングスっぽいシンセとか4小節目8小節目のマレット系の音とかスネアロールとかいろいろ足しました。
+ストリングスっぽいシンセとか8小節目16小節目のマレット系の音とかスネアロールとかいろいろ足しました。
 このあたりも他の曲を参考にしたりします。
 
 ### 展開部分をつくる
